@@ -2,6 +2,7 @@ var http = require('http');
 var querystring = require('querystring');
 var net = require('net');
 var url = require('url');
+var config = require('./config').php_config;
 var parser = require('xml2json');
 
 var set_cookies = function(cookies,options) {
@@ -115,8 +116,8 @@ var get_token = function(content,callback) {
 
 exports.query = function(p_req,p_res) { 
   var login_data = {
-    pma_username:'pornthipw',
-    pma_password:'g,jolbo1979',
+    pma_username:config.user,
+    pma_password:config.password,
     server:'1'
   };
 

@@ -4,6 +4,7 @@ var querystring = require('querystring');
 var net = require('net');
 var url = require('url');
 var parser = require('xml2json');
+var config = require('./config').society_config;
 
 var set_cookies = function(cookies,options) {
   var cookie_str = '';
@@ -59,8 +60,8 @@ var first_data = {
 };
 
 var login_data = {
-  username:'Sermsak K.',
-  password:'123456'
+  username:config.user,
+  password:config.password
 };
 
 var sql_page = {
