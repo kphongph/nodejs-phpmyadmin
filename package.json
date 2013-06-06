@@ -1,0 +1,11 @@
+{
+  "name" : "nodejs-phpmyadmin",
+  "version" : "0.0.1",
+  "user": "kphongph",
+  "dependencies" : {
+    "xml2json":"*",
+    "express":"*"
+  },
+  "scripts": {
+  } 
+}
