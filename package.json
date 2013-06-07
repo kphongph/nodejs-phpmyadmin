@@ -3,7 +3,7 @@
   "version" : "0.0.1",
   "user": "kphongph",
   "dependencies" : {
-    "xml2json":"*",
+    "xml2js":"*",
     "express":"*"
   },
   "scripts": {
