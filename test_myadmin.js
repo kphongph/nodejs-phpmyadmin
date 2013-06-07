@@ -4,11 +4,12 @@ var querystring = require('querystring');
 var net = require('net');
 var url = require('url');
 var parser = require('xml2json');
+var config = require('./config');
 
 
 var login_data = {
-  pma_username:'root',
-  pma_password:'isylzjko',
+  pma_username:config.php_config.user,
+  pma_password:config.php_config.password,
   server:'1'
 };
 
